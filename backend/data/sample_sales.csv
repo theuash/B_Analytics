@@ -1,0 +1,190 @@
+date,region,product_category,revenue,units_sold,quarter
+2023-01-05,North,Electronics,12500.00,50,Q1
+2023-01-08,South,Clothing,8750.50,125,Q1
+2023-01-12,East,Electronics,15200.00,62,Q1
+2023-01-15,West,Food & Beverages,6300.75,210,Q1
+2023-01-18,North,Clothing,9400.00,135,Q1
+2023-01-22,South,Electronics,11800.25,48,Q1
+2023-01-25,East,Home & Garden,7650.00,85,Q1
+2023-01-28,West,Electronics,13900.50,55,Q1
+2023-02-02,North,Food & Beverages,5200.00,175,Q1
+2023-02-05,South,Home & Garden,8900.75,95,Q1
+2023-02-08,East,Clothing,10350.00,148,Q1
+2023-02-12,West,Food & Beverages,4800.50,160,Q1
+2023-02-15,North,Electronics,16700.00,68,Q1
+2023-02-18,South,Clothing,7250.25,105,Q1
+2023-02-22,East,Home & Garden,9100.00,100,Q1
+2023-02-25,West,Electronics,14500.75,58,Q1
+2023-02-28,North,Home & Garden,6800.00,78,Q1
+2023-03-03,South,Food & Beverages,5600.50,185,Q1
+2023-03-06,East,Electronics,17800.00,72,Q1
+2023-03-10,West,Clothing,8200.25,118,Q1
+2023-03-13,North,Food & Beverages,6100.00,200,Q1
+2023-03-16,South,Electronics,13200.75,54,Q1
+2023-03-20,East,Clothing,11500.00,165,Q1
+2023-03-23,West,Home & Garden,7400.50,82,Q1
+2023-03-26,North,Electronics,15800.00,64,Q1
+2023-03-30,South,Home & Garden,8400.25,92,Q1
+2023-04-02,East,Food & Beverages,5900.00,195,Q1
+2023-04-05,West,Clothing,9800.75,140,Q2
+2023-04-08,North,Electronics,14200.00,57,Q2
+2023-04-12,South,Food & Beverages,4600.50,155,Q2
+2023-04-15,East,Home & Garden,8800.00,97,Q2
+2023-04-18,West,Electronics,16300.25,66,Q2
+2023-04-22,North,Clothing,7900.00,112,Q2
+2023-04-25,South,Electronics,12600.75,52,Q2
+2023-04-28,East,Food & Beverages,5400.00,180,Q2
+2023-05-02,West,Home & Garden,9500.50,105,Q2
+2023-05-05,North,Electronics,18200.00,74,Q2
+2023-05-08,South,Clothing,8100.25,115,Q2
+2023-05-12,East,Electronics,14800.00,60,Q2
+2023-05-15,West,Food & Beverages,6700.75,220,Q2
+2023-05-18,North,Home & Garden,7200.00,80,Q2
+2023-05-22,South,Electronics,11200.50,46,Q2
+2023-05-25,East,Clothing,10800.00,155,Q2
+2023-05-28,West,Electronics,15600.25,63,Q2
+2023-06-01,North,Food & Beverages,5800.00,190,Q2
+2023-06-05,South,Home & Garden,9200.75,100,Q2
+2023-06-08,East,Electronics,16900.00,69,Q2
+2023-06-12,West,Clothing,7600.50,108,Q2
+2023-06-15,North,Electronics,13500.00,55,Q2
+2023-06-18,South,Food & Beverages,4900.25,165,Q2
+2023-06-22,East,Home & Garden,8500.00,93,Q2
+2023-06-25,West,Electronics,17500.75,71,Q2
+2023-06-28,North,Clothing,9100.00,130,Q2
+2023-07-02,South,Electronics,12100.50,49,Q2
+2023-07-05,East,Food & Beverages,6200.00,205,Q3
+2023-07-08,West,Home & Garden,7800.25,87,Q3
+2023-07-12,North,Electronics,15400.00,63,Q3
+2023-07-15,South,Clothing,8600.75,122,Q3
+2023-07-18,East,Electronics,14100.00,57,Q3
+2023-07-22,West,Food & Beverages,5100.50,170,Q3
+2023-07-25,North,Home & Garden,9700.00,107,Q3
+2023-07-28,South,Electronics,16500.25,67,Q3
+2023-08-01,East,Clothing,7300.00,105,Q3
+2023-08-05,West,Electronics,13800.75,56,Q3
+2023-08-08,North,Food & Beverages,5500.00,183,Q3
+2023-08-12,South,Home & Garden,8200.50,90,Q3
+2023-08-15,East,Electronics,18500.00,75,Q3
+2023-08-18,West,Clothing,9300.25,133,Q3
+2023-08-22,North,Electronics,12400.00,51,Q3
+2023-08-25,South,Food & Beverages,6800.75,225,Q3
+2023-08-28,East,Home & Garden,7500.00,83,Q3
+2023-09-01,West,Electronics,14700.50,60,Q3
+2023-09-05,North,Clothing,10200.00,146,Q3
+2023-09-08,South,Electronics,11600.25,47,Q3
+2023-09-12,East,Food & Beverages,5700.00,188,Q3
+2023-09-15,West,Home & Garden,8900.75,98,Q3
+2023-09-18,North,Electronics,17200.00,70,Q3
+2023-09-22,South,Clothing,7800.50,112,Q3
+2023-09-25,East,Electronics,15900.00,65,Q3
+2023-09-28,West,Food & Beverages,4500.25,150,Q3
+2023-10-02,North,Home & Garden,9400.00,103,Q4
+2023-10-05,South,Electronics,13100.75,53,Q4
+2023-10-08,East,Clothing,11100.00,158,Q4
+2023-10-12,West,Electronics,16800.50,68,Q4
+2023-10-15,North,Food & Beverages,6400.00,212,Q4
+2023-10-18,South,Home & Garden,7100.25,79,Q4
+2023-10-22,East,Electronics,14400.00,59,Q4
+2023-10-25,West,Clothing,8400.75,120,Q4
+2023-10-28,North,Electronics,19200.00,78,Q4
+2023-11-01,South,Food & Beverages,5300.50,175,Q4
+2023-11-05,East,Home & Garden,9600.00,106,Q4
+2023-11-08,West,Electronics,15100.25,61,Q4
+2023-11-12,North,Clothing,10500.00,150,Q4
+2023-11-15,South,Electronics,12800.75,52,Q4
+2023-11-18,East,Food & Beverages,6000.00,198,Q4
+2023-11-22,West,Home & Garden,8100.50,89,Q4
+2023-11-25,North,Electronics,17800.00,72,Q4
+2023-11-28,South,Clothing,7500.25,108,Q4
+2023-12-02,East,Electronics,16200.00,66,Q4
+2023-12-05,West,Food & Beverages,5800.75,192,Q4
+2023-12-08,North,Home & Garden,9900.00,110,Q4
+2023-12-12,South,Electronics,14600.50,59,Q4
+2023-12-15,East,Clothing,11800.00,168,Q4
+2023-12-18,West,Electronics,18100.25,74,Q4
+2023-12-22,North,Food & Beverages,7200.00,238,Q4
+2023-12-25,South,Home & Garden,8700.75,96,Q4
+2023-12-28,East,Electronics,13400.00,54,Q4
+2023-01-03,North,Clothing,9600.50,138,Q1
+2023-01-09,West,Food & Beverages,4300.00,143,Q1
+2023-01-14,South,Electronics,15500.25,63,Q1
+2023-01-20,East,Home & Garden,7900.00,88,Q1
+2023-01-27,North,Food & Beverages,5900.75,195,Q1
+2023-02-04,West,Clothing,8500.00,122,Q1
+2023-02-10,South,Home & Garden,10200.50,113,Q1
+2023-02-17,East,Electronics,16400.00,67,Q1
+2023-02-24,North,Clothing,7400.25,106,Q1
+2023-03-02,West,Electronics,14100.00,57,Q1
+2023-03-09,South,Food & Beverages,6500.75,215,Q1
+2023-03-15,East,Home & Garden,8300.00,91,Q1
+2023-03-22,North,Electronics,18600.50,76,Q1
+2023-03-29,West,Clothing,9200.00,132,Q1
+2023-04-04,South,Electronics,11400.25,46,Q2
+2023-04-11,East,Food & Beverages,5100.00,168,Q2
+2023-04-17,North,Home & Garden,8600.75,95,Q2
+2023-04-24,West,Electronics,15900.00,65,Q2
+2023-05-01,South,Clothing,7700.50,110,Q2
+2023-05-07,East,Electronics,13600.00,55,Q2
+2023-05-14,North,Food & Beverages,6900.25,228,Q2
+2023-05-20,West,Home & Garden,9800.00,108,Q2
+2023-05-27,South,Electronics,17100.75,70,Q2
+2023-06-03,East,Clothing,10600.00,152,Q2
+2023-06-10,North,Electronics,12900.50,53,Q2
+2023-06-17,West,Food & Beverages,5500.00,182,Q2
+2023-06-24,South,Home & Garden,7600.25,84,Q2
+2023-07-01,East,Electronics,14300.00,58,Q3
+2023-07-07,North,Clothing,8800.75,126,Q3
+2023-07-14,West,Electronics,16100.00,66,Q3
+2023-07-21,South,Food & Beverages,4700.50,157,Q3
+2023-07-27,East,Home & Garden,9300.00,102,Q3
+2023-08-03,North,Electronics,19500.25,79,Q3
+2023-08-10,West,Clothing,7200.00,103,Q3
+2023-08-17,South,Electronics,15300.75,62,Q3
+2023-08-24,East,Food & Beverages,6600.00,218,Q3
+2023-08-31,North,Home & Garden,8400.50,93,Q3
+2023-09-07,West,Electronics,13900.00,57,Q3
+2023-09-14,South,Clothing,10100.25,145,Q3
+2023-09-21,East,Electronics,17600.00,72,Q3
+2023-09-28,North,Food & Beverages,5200.75,172,Q3
+2023-10-05,West,Home & Garden,7700.00,85,Q4
+2023-10-12,South,Electronics,12300.50,50,Q4
+2023-10-19,East,Clothing,11400.00,163,Q4
+2023-10-26,North,Electronics,16500.25,67,Q4
+2023-11-02,West,Food & Beverages,6100.00,202,Q4
+2023-11-09,South,Home & Garden,9100.75,100,Q4
+2023-11-16,East,Electronics,14900.00,61,Q4
+2023-11-23,North,Clothing,8200.50,118,Q4
+2023-11-30,West,Electronics,18400.00,75,Q4
+2023-12-07,South,Food & Beverages,5600.25,185,Q4
+2023-12-14,East,Home & Garden,10300.00,114,Q4
+2023-12-21,North,Electronics,15700.75,64,Q4
+2023-12-28,West,Clothing,9500.00,136,Q4
+2023-01-07,East,Food & Beverages,4200.50,140,Q1
+2023-02-14,North,Electronics,17300.00,70,Q1
+2023-03-18,South,Clothing,8900.25,128,Q1
+2023-04-21,West,Home & Garden,7300.00,81,Q2
+2023-05-19,East,Electronics,16000.75,65,Q2
+2023-06-16,North,Food & Beverages,5400.00,178,Q2
+2023-07-20,South,Electronics,13700.50,56,Q3
+2023-08-14,West,Clothing,10900.00,156,Q3
+2023-09-11,East,Home & Garden,8000.25,88,Q3
+2023-10-16,North,Electronics,14800.00,60,Q4
+2023-11-13,South,Food & Beverages,6300.75,208,Q4
+2023-12-10,West,Electronics,19800.50,81,Q4
+2023-01-17,East,Clothing,9700.00,139,Q1
+2023-02-20,North,Home & Garden,7100.25,79,Q1
+2023-03-25,South,Electronics,15200.75,62,Q1
+2023-04-29,West,Food & Beverages,5800.00,192,Q2
+2023-05-24,East,Electronics,12500.50,51,Q2
+2023-06-21,North,Clothing,8300.00,119,Q2
+2023-07-19,South,Home & Garden,9600.25,106,Q3
+2023-08-23,West,Electronics,17400.00,71,Q3
+2023-09-20,East,Food & Beverages,4900.75,162,Q3
+2023-10-24,North,Clothing,11200.00,160,Q4
+2023-11-21,South,Electronics,16100.50,66,Q4
+2023-12-18,West,Home & Garden,8800.25,97,Q4
+2023-03-12,East,Electronics,13300.00,54,Q1
+2023-06-09,North,Food & Beverages,6700.75,222,Q2
+2023-09-06,South,Clothing,9800.50,141,Q3
+2023-12-03,West,Electronics,15400.25,63,Q4

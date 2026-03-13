@@ -1,0 +1,181 @@
+Objective
+Build a fully functional web application that allows non-technical users to generate interactive data dashboards from natural language queries. The system must interpret a user's plain-English request, query a dataset, select appropriate visualizations, and render a cohesive, interactive dashboard in real time.
+
+Background & Context
+Refer to the provided problem statement (see PDF). The solution should empower business executives to ask questions like *"Show me monthly sales revenue for Q3 broken down by region and highlight the top-performing product category"* and instantly receive a dashboard with relevant charts.
+
+Detailed Requirements
+Functional Requirements
+
+1.Natural Language Input
+
+A text box where users can type queries in plain English.
+
+Support for progressively complex queries (e.g., simple aggregation, filters, grouping, time series, comparisons).
+
+2.LLM-Powered Query Translation
+
+Integrate Google Gemini API to convert natural language into a structured query (e.g., SQL for a database, or pandas operations for a CSV).
+
+Use clever prompt engineering to ensure accurate SQL generation, chart type selection, and handling of ambiguous requests.
+
+3.Data Source
+
+Initially, use a hardcoded sample dataset (e.g., a CSV file or SQLite database) containing sales data with fields like date, region, product_category, revenue, units_sold, etc.
+
+Bonus: Allow users to upload their own CSV file and query it interactively (Data Format Agnostic).
+
+4.Chart Generation & Visualization
+
+Automatically choose the most appropriate chart type based on the query and data shape:
+
+Line chart for time series
+
+Bar chart for categorical comparisons
+
+Pie/donut chart for parts of a whole
+
+Scatter plot for correlations
+
+Tables for detailed breakdowns
+
+Use a modern charting library (e.g., Recharts, Chart.js, Plotly) to render interactive charts with tooltips, zoom, and hover effects.
+
+5.Dashboard Layout
+
+Display multiple charts and insights in a clean, responsive grid layout.
+
+Include a title and brief description of what the dashboard shows.
+
+Show the generated SQL or query for transparency (optional but nice).
+
+6.Error Handling & Ambiguity
+
+Gracefully handle vague or impossible queries (e.g., "show me everything"): ask for clarification or return a helpful message.
+
+Prevent hallucination: if the data cannot answer the query, the system should clearly state that instead of fabricating numbers.
+
+7.User Experience
+
+Clean, modern, and intuitive UI.
+
+Loading indicators while the dashboard is being generated.
+
+Ability to interact with charts (hover, zoom, filter if possible).
+
+Bonus: Follow-up questions / chat with the dashboard to refine the view (e.g., "now filter to East Coast only").
+
+Try To create a Parallax Effect Motion to make it look attractive and create 3d elements to enhance the visuals, but don't mess it up.
+
+8.Backend API
+
+Expose endpoints for:
+
+Receiving a natural language query and returning chart configurations + data.
+
+(If CSV upload) handling file uploads and querying the uploaded data.
+
+Use FastAPI (Python) or Node.js/Express for the backend.
+
+Data Storage
+
+Use SQLite or PostgreSQL for persistent storage, or simply work with in‑memory data frames for CSV uploads.
+
+Non‑Functional Requirements
+Performance: Dashboard should generate in < 5 seconds for typical queries.
+
+Scalability: Code should be modular and well‑structured for future extensions.
+
+Security: If using API keys, store them in environment variables; never expose them client‑side.
+
+Recommended Tech Stack (Strictly Follow)
+Layer	Technologies
+Frontend	React (with Vite or Next.js) – for rich interactivity and aesthetics.
+Charting	Recharts (preferred) or Plotly – both support tooltips and zoom.
+Backend	Python + FastAPI – easy integration with Gemini and data processing.
+LLM	Google Gemini API (via google.generativeai Python package).
+Database	SQLite (for simplicity) plus support for CSV uploads (pandas).
+Styling	Tailwind CSS or Material‑UI for a polished, modern look.
+Deployment	Provide clear instructions to run locally (e.g., docker-compose or manual setup).
+Note: If you prefer a rapid‑prototyping framework like Streamlit to speed up development, you may use it, but ensure the final result meets the aesthetics & UX criteria (clean design, interactivity). However, React is strongly recommended for better chart interactivity and customisation.
+
+Evaluation Criteria to Keep in Mind
+Your implementation will be judged on:
+
+Accuracy (40%)
+
+Correct data retrieval (SQL/query generation)
+
+Appropriate chart selection
+
+Robust error handling
+
+Aesthetics & UX (30%)
+
+Visual design (clean, modern)
+
+Interactivity (tooltips, hover, zoom)
+
+Intuitive user flow with loading states
+
+Approach & Innovation (30%)
+
+Robust architecture from text → LLM → database → frontend
+
+Effective prompt engineering and hallucination prevention
+
+Use of clever techniques (RAG, agentic workflows) if applicable
+
+Bonus Points
+
+Follow‑up questions / chat with dashboard (+10)
+
+Upload your own CSV and query it (+20)
+
+Deliverables
+A working prototype hosted or runnable locally.
+
+Public GitHub repository with:
+
+Clean README (setup instructions, tech stack, demo video link)
+
+Well‑structured code (separate frontend/backend folders)
+
+Environment variable template (.env.example)
+
+A 10‑minute presentation (recorded or script) demonstrating the tool answering at least three distinct, progressively complex text queries:
+
+Example 1: Simple aggregation (e.g., "Total revenue by region")
+
+Example 2: Time‑series with filter (e.g., "Monthly sales for Q3 2023")
+
+Example 3: Multi‑faceted (e.g., "Top 5 product categories by revenue in the East region, shown as a bar chart and also show a pie chart for the same")
+
+Bonus: Show CSV upload and follow‑up interaction.
+
+
+
+
+
+Additional Instructions
+Write clean, well‑commented code.
+
+Use environment variables for the Gemini API key.
+
+Include a sample dataset (e.g., sample_sales.csv) with at least 100 rows and columns: date, region, product_category, revenue, units_sold, quarter.
+
+For the LLM prompt, design a system prompt that instructs Gemini to output JSON containing:
+
+sql_query (if using a database) or data_operation (if using pandas)
+
+chart_type (e.g., "line", "bar", "pie", "table")
+
+title for the chart
+
+x_axis, y_axis fields
+
+Any filters applied
+
+Parse this JSON on the backend, execute the query against the data, and return both the data and the chart configuration to the frontend.
+
+On the frontend, dynamically render charts based on the configuration.
