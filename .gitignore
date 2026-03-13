@@ -1,0 +1,77 @@
+# .gitignore for Dashboard Analytics
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+
+# FastAPI
+*.db
+*.sqlite
+*.sqlite3
+dashboard.db
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+dist/
+.next/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.docker
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build
+build/
+dist/
