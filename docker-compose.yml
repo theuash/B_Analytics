@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 version: '3.8'
+=======
+version: "3.8"
+>>>>>>> 0661e51384df2bbd95f08e75ce0d663ce36526c8
 
 services:
   backend:
@@ -7,6 +11,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
+<<<<<<< HEAD
     environment:
       - GOOGLE_API_KEY=${GOOGLE_API_KEY}
       - DATABASE_URL=sqlite:///./dashboard.db
@@ -15,6 +20,12 @@ services:
       - ./backend:/app
       - ./data:/app/data
     command: python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+=======
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend/data:/app/data
+>>>>>>> 0661e51384df2bbd95f08e75ce0d663ce36526c8
 
   frontend:
     build:
@@ -22,6 +33,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5173:5173"
+<<<<<<< HEAD
     environment:
       - VITE_API_BASE=http://localhost:8000
     volumes:
@@ -31,3 +43,7 @@ services:
 
 volumes:
   dashboard_db:
+=======
+    depends_on:
+      - backend
+>>>>>>> 0661e51384df2bbd95f08e75ce0d663ce36526c8
